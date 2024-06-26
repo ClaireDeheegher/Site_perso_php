@@ -66,7 +66,7 @@ require("header.php");
           </div>
 
           <div class="col-md-4">
-            <label for="name-field" class="pb-2">Votre nom</label>
+            <label for="name-field" class="pb-2">Votre nom</label> <!-- La classe form-control peret de controler avec bootstrap la validation du champ -->
             <input type="text" name="last-name" id="name-field" class="form-control" required="" value= "<?php echo $_SESSION["last-name"]; unset($_SESSION["last-name"]) ?>">
           </div>
 
@@ -100,7 +100,11 @@ require("header.php");
             <label for="message-field" class="pb-2">Message</label>
             <textarea class="form-control" name="message" rows="10" id="message-field" required="" value="<?php echo $_SESSION["message"]; unset ($_SESSION["message"]); ?>"></textarea>
           </div>
-
+          
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Envoi d'un fichier</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
           <div class="col-md-12 text-center">
             
             <div class="error-message"></div>
