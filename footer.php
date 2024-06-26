@@ -6,6 +6,7 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
+        <?php echo $_SESSION["title"]; echo $_SESSION["name"]; ?>
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->

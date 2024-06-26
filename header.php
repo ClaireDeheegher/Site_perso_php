@@ -1,7 +1,6 @@
 <header.php>
 <?php session_start();
-$id_session = session_id(); ?>
-
+include ("formcheck.php");  ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

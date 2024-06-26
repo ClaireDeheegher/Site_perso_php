@@ -4,9 +4,7 @@ $title = 'Contact';
 $description = 'Page avec un formulaire de contact';
 $keywords = 'form, phone number, map';
 require("header.php"); 
-$_SESSION["civilite"] = $_POST["civilite"];
-$_SESSION["last-name"] = $_POST["last-name"];
-$_SESSION[""] = $_POST["name"];
+
 ?>
 <main>
 <!-- Contact Section -->
@@ -16,8 +14,7 @@ $_SESSION[""] = $_POST["name"];
 <div class="container section-title" data-aos="fade-up">
   <h2>Contact</h2>
   <p>Vous pouvez me contacter via ce formulaire afin de me transmettre un projet, ou pour toute autre demande.</p>
-  <p><?php 
-  echo 'Bonjour' .$_SESSION['name']. ',' .$_SESSION['last-name']. '.'?></p>
+  
 </div><!-- End Section Title -->
 
 <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -70,17 +67,17 @@ $_SESSION[""] = $_POST["name"];
 
           <div class="col-md-4">
             <label for="name-field" class="pb-2">Votre nom</label>
-            <input type="text" name="last-name" id="name-field" class="form-control" required="">
+            <input type="text" name="last-name" id="name-field" class="form-control" required="" value= "<?php echo $_SESSION["last-name"]; unset($_SESSION["last-name"]) ?>">
           </div>
 
           <div class="col-md-4">
             <label for="name-field" class="pb-2">Votre prénom</label>
-            <input type="text" name="name" id="name-field" class="form-control" required="">
+            <input type="text" name="name" id="name-field" class="form-control" required="" value="<?php echo $_SESSION["name"]; unset($_SESSION["name"]) ?>">
           </div>
 
           <div class="col-md-12">
             <label for="email-field" class="pb-2">Votre Email</label>
-            <input type="email" class="form-control" name="email" id="email-field" required="">
+            <input type="email" class="form-control" name="email" id="email-field" required="" value="<?php echo $_SESSION["email"]; unset($_SESSION["email"]); ?>">
           </div>
 
           <div class="col-md-12">
@@ -101,7 +98,7 @@ $_SESSION[""] = $_POST["name"];
 
           <div class="col-md-12">
             <label for="message-field" class="pb-2">Message</label>
-            <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+            <textarea class="form-control" name="message" rows="10" id="message-field" required="" value="<?php echo $_SESSION["message"]; unset ($_SESSION["message"]); ?>"></textarea>
           </div>
 
           <div class="col-md-12 text-center">

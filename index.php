@@ -1,4 +1,5 @@
 <?php 
+ 
 $title = 'Index';
 $description = 'Page d accueil du site';
 $keywords = 'home';
@@ -47,6 +48,8 @@ switch ($_SERVER['REQUEST_URI']) {
   }
 
      ?></p>
+     <p><?php 
+  echo 'Bonjour' .$_SESSION["name"]. ',' .$_SESSION["last-name"]. '. Bon retour sur le site !'?></p>
     </section>
 </mai>
 
