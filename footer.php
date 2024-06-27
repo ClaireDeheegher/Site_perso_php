@@ -1,12 +1,14 @@
 <footer.php>
-<footer id="footer" class="footer position-relative">
+  <footer id="footer" class="footer position-relative">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span>
+        </p>
       </div>
       <div class="credits">
-        <?php echo $_SESSION["title"]; echo $_SESSION["name"]; ?>
+        <?php echo $_SESSION["title"];
+        echo $_SESSION["name"]; ?>
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
@@ -18,7 +20,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -38,6 +41,6 @@
   <!-- Main JS File -->
   <script src="iPortfolio/assets/js/main.js"></script>
 
-</body>
-</html>
+  </body>
 
+  </html>
